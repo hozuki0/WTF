@@ -23,6 +23,8 @@ namespace WithLib.View
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = new ViewModel.ViewModel();
         }
     }
 }

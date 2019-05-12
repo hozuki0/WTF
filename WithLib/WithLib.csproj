@@ -90,6 +90,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Source\Command\CountDownCommand.cs" />
+    <Compile Include="Source\Command\CountUpCommand.cs" />
+    <Compile Include="Source\Model\Model.cs" />
+    <Compile Include="Source\ViewModel\ViewModel.cs" />
     <Compile Include="Source\View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -122,10 +126,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Source\Command\" />
-    <Folder Include="Source\Model\" />
-    <Folder Include="Source\ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
