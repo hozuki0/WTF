@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raw"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="200">
     <Grid>
-        
+        <Label Content="{Binding Count}" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" 
+               FontSize="32"/>
+
+        <Button Content="-" 
+                HorizontalAlignment="Left" 
+                Margin="10,119,0,0" 
+                VerticalAlignment="Top" 
+                Width="80" 
+                Height="40"
+                FontSize="32"
+                Command="{Binding CountDownCommand}"/>
+
+        <Button Content="+" 
+                HorizontalAlignment="Left" 
+                Margin="102,119,0,0" 
+                VerticalAlignment="Top" 
+                Width="80" 
+                Height="40"
+                FontSize="32"
+                Command="{Binding CountUpCommand}"/>
     </Grid>
 </Window>

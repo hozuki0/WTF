@@ -23,6 +23,8 @@ namespace Raw.View
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = new ViewModel.ViewModel();
         }
     }
 }
